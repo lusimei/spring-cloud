@@ -16,7 +16,8 @@ public class DeptConsumerController {
     @Autowired
     private RestTemplate restTemplate;
 
-    private static final String REST_URL = "http://localhost:8001/";
+//    private static final String REST_URL = "http://localhost:8001/";
+    private static final String REST_URL = "http://springcloud-provider-dept";
 
     @RequestMapping("/consumer/dept/{id}")
     public Dept get(@PathVariable("id")Long id){
