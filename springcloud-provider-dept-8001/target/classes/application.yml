@@ -14,3 +14,15 @@ spring:
     url: jdbc:mysql://localhost:3306/student_manage?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8
     username: root
     password: mysql
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+  instance:
+    instance-id: springcloud-provider-dept-8001
+
+info:
+  app.name: kuangshen-springcloud
+  app.password: 123456
+  company.name: mieasy
