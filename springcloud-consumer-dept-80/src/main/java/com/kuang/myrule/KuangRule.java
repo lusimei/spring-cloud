@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class RuleConfig {
+public class KuangRule {
 
     @Bean
-    public IRule rule(){
+    public IRule myRule(){
         return new MyRule();
     }
 }

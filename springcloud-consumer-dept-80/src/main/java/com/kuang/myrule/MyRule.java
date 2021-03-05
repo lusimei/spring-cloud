@@ -20,25 +20,22 @@ public class MyRule extends AbstractLoadBalancerRule {
             if(Thread.interrupted()){
                 return null;
             }
-
-            List<Server> reachableServers = lb.getReachableServers();//获得活着的服务
-            List<Server> allServers = lb.getAllServers();//获得全部服务
-
-            int serverCount = allServers.size();
+            List<Server> upList = lb.getReachableServers();
+            List<Server> allList = lb.getAllServers();
+            int serverCount = allList.size();
             if (serverCount == 0) {
                 return null;
             }
-
             if(total < 5){
-                server = reachableServers.get(currentIndex);
+                server = upList.get(currentIndex);
                 total++;
             }else{
                 total = 0;
                 currentIndex++;
-                if(currentIndex >= reachableServers.size()){
+                if(currentIndex >= upList.size()){
                     currentIndex = 0;
                 }
-                server = reachableServers.get(currentIndex);
+                server = upList.get(currentIndex);
             }
         }
         return server;
@@ -50,7 +47,7 @@ public class MyRule extends AbstractLoadBalancerRule {
     }
 
     @Override
-    public Server choose(Object o) {
-        return null;
+    public Server choose(Object key) {
+        return this.choose(this.getLoadBalancer(), key);
     }
 }

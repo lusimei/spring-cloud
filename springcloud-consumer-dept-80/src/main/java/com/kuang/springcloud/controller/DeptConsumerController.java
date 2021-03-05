@@ -17,7 +17,10 @@ public class DeptConsumerController {
     private RestTemplate restTemplate;
 
 //    private static final String REST_URL = "http://localhost:8001/";
-    private static final String REST_URL = "http://springcloud-provider-dept";
+    /**
+     * 使用自定义负载均衡规则时 应用名在此处一定要！！！大写！！！小写应用名无法生效,会使用默认的轮循规则
+     */
+    private static final String REST_URL = "http://SPRINGCLOUD-PROVIDER-DEPT";
 
     @RequestMapping("/consumer/dept/{id}")
     public Dept get(@PathVariable("id")Long id){
