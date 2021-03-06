@@ -42,12 +42,12 @@ public class MyRule extends AbstractLoadBalancerRule {
     }
 
     @Override
-    public void initWithNiwsConfig(IClientConfig iClientConfig) {
-
+    public Server choose(Object key) {
+        return this.choose(this.getLoadBalancer(), key);
     }
 
     @Override
-    public Server choose(Object key) {
-        return this.choose(this.getLoadBalancer(), key);
+    public void initWithNiwsConfig(IClientConfig iClientConfig) {
+
     }
 }
