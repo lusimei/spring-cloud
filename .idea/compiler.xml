@@ -8,24 +8,30 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-api" />
         <module name="springcloud-consumer-dept-80" />
+        <module name="springcloud-consumer-dept-80-feign" />
+        <module name="springcloud-consumer-hystrix-dashboard" />
         <module name="springcloud-eureka-7001" />
         <module name="springcloud-eureka-7002" />
         <module name="springcloud-eureka-7003" />
         <module name="springcloud-provider-dept-8001" />
         <module name="springcloud-provider-dept-8002" />
         <module name="springcloud-provider-dept-8003" />
+        <module name="springcloud-provider-dept-hystrix-8004" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springcloud" target="1.8" />
       <module name="springcloud-api" target="1.8" />
       <module name="springcloud-consumer-dept-80" target="1.8" />
+      <module name="springcloud-consumer-dept-80-feign" target="1.8" />
+      <module name="springcloud-consumer-hystrix-dashboard" target="1.8" />
       <module name="springcloud-eureka-7001" target="1.8" />
       <module name="springcloud-eureka-7002" target="1.8" />
       <module name="springcloud-eureka-7003" target="1.8" />
       <module name="springcloud-provider-dept-8001" target="1.8" />
       <module name="springcloud-provider-dept-8002" target="1.8" />
       <module name="springcloud-provider-dept-8003" target="1.8" />
+      <module name="springcloud-provider-dept-hystrix-8004" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

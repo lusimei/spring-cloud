@@ -28,7 +28,10 @@ public class DeptController {
 
     @GetMapping("/getById/{id}")
     public Dept queryById(@PathVariable("id") Long id){
-        return deptService.queryById(id);
+        Dept dept = deptService.queryById(id);
+        if(dept == null)
+            throw new RuntimeException("id =->"+id+"找不到对应的信息");
+        return dept;
     };
 
     @GetMapping("/list")

@@ -5,12 +5,15 @@
       <module fileurl="file://$PROJECT_DIR$/springcloud.iml" filepath="$PROJECT_DIR$/springcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-api/springcloud-api.iml" filepath="$PROJECT_DIR$/springcloud-api/springcloud-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-dept-80/springcloud-consumer-dept-80.iml" filepath="$PROJECT_DIR$/springcloud-consumer-dept-80/springcloud-consumer-dept-80.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-dept-80-feign/springcloud-consumer-dept-80-feign.iml" filepath="$PROJECT_DIR$/springcloud-consumer-dept-80-feign/springcloud-consumer-dept-80-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-consumer-hystrix-dashboard/springcloud-consumer-hystrix-dashboard.iml" filepath="$PROJECT_DIR$/springcloud-consumer-hystrix-dashboard/springcloud-consumer-hystrix-dashboard.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-7001/springcloud-eureka-7001.iml" filepath="$PROJECT_DIR$/springcloud-eureka-7001/springcloud-eureka-7001.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-7002/springcloud-eureka-7002.iml" filepath="$PROJECT_DIR$/springcloud-eureka-7002/springcloud-eureka-7002.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-eureka-7003/springcloud-eureka-7003.iml" filepath="$PROJECT_DIR$/springcloud-eureka-7003/springcloud-eureka-7003.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-provider-dept-8001/springcloud-provider-dept-8001.iml" filepath="$PROJECT_DIR$/springcloud-provider-dept-8001/springcloud-provider-dept-8001.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-provider-dept-8002/springcloud-provider-dept-8002.iml" filepath="$PROJECT_DIR$/springcloud-provider-dept-8002/springcloud-provider-dept-8002.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud-provider-dept-8003/springcloud-provider-dept-8003.iml" filepath="$PROJECT_DIR$/springcloud-provider-dept-8003/springcloud-provider-dept-8003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud-provider-dept-hystrix-8004/springcloud-provider-dept-hystrix-8004.iml" filepath="$PROJECT_DIR$/springcloud-provider-dept-hystrix-8004/springcloud-provider-dept-hystrix-8004.iml" />
     </modules>
   </component>
 </project>
